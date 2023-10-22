@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 button {
@@ -238,7 +239,7 @@ body {
 }
 
 .panel__img:nth-child(5) {
-  animation: fade-in 1s 0.4s backwards;
+  animation: fade-in 1s 0.4s backwards
 }
 
 .panel__img {
@@ -270,4 +271,48 @@ body {
 .main {
   background-color: #EDF1F3;
   flex: 1;
+}
+
+.info-bar {
+  height: 50px;
+  background-color: #FFF;
+  border-bottom: 1px solid #D6DDE1;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.breadcrumbs__link, .breadcrumbs__icon {
+  color: #A6ADB1;
+}
+
+.breadcrumbs__icon {
+  margin: 0 13px;
+}
+
+.breadcrumbs__name {
+  color: #2E3335;
+  font-weight: 500;
+}
+
+.button {
+  background-color: #375BB6;
+  font-size: 11px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 500px;
+  transition: all 0.4s;
+}
+
+.button:hover, .button:focus {
+  background-color: #26438D;
 }
