@@ -221,6 +221,13 @@ a {
   line-height: 1;
 }
 
+.second-heading {
+  color: #161616;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -486,8 +493,47 @@ a {
 // ----------------------------
 .steps {
   background-color: #E7EDEE;
-  
+  display: flex;
+  align-items: center;
+
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+}
+
+.step {
+  text-align: center;
+  padding: 0 20px;
+  
+  &__icon {
+    background-color: #fff;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-bottom: 17px;
+
+    &--1 {
+      color: #67B941;
+    }
+
+    &--2 {
+      color: #38B049;
+    }
+
+    &--3 {
+      color: #1EA97B;
+    }
+
+  }
+
+  &__text {
+    color: $color-grey-dark;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+
 }
 
